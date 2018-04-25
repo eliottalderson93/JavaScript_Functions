@@ -1,0 +1,164 @@
+<html>
+
+<head>
+    <title>jQuery Default</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <!--functions: .click, .hide, .show, .toggle, .slideDown, .slideUp, .slideToggle, .fadeIn, .fadeOut, .addClass, .before, .after, .append, .html, .attr, .val, .text, .data-->
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#click button').click(function(){
+                alert("You have clicked the first class!");
+            });
+            $('#hide button').click(function(){
+                $('.jQuery p').hide();
+            });
+            $('#show button').click(function(){
+                $('.jQuery p').show();
+            });
+            $('#toggle button').click(function(){
+                $('.jQuery p').toggle();
+            });
+            $('#slideDown button').click(function(){
+                $('#slideDown p').hide().slideDown(1000);
+            });
+            $('#slideUp button').click(function(){
+                $('#slideUp p').show().slideUp();
+            });
+            $('#slideToggle button').click(function(){
+                $('#slideToggle p').slideToggle();
+            });
+            $('#fadeIn button').click(function(){
+                $('#fadeIn p').fadeIn(); /*come back to this one*/
+            });
+            $('#fadeOut button').click(function(){
+                $('#fadeOut p').fadeOut();
+            });
+            $('#addClass button').click(function(){
+                $('#addClass p').addClass('red')
+            });
+            /* <!--functions: .click, .hide, .show, .toggle, .slideDown, .slideUp, .slideToggle, .fadeIn, .fadeOut, .addClass, .before, .after, .append, .html, .attr, .val, .text, .data--> */
+            $('#before button').click(function(){
+                $('.JQuery p').before("<p>No more.<p>");
+            });
+            $('#after button').click(function(){
+                $('.JQuery p').after("<p>Baby Don't Hurt me.<p>");
+            });
+            $('#append button').click(function(){
+                $('.JQuery p').append("<p>Don't Hurt me.<p>");
+            });
+            $('#html button').click(function(){
+                $('.jQuery p').html("<p>What is love?<p>");
+            });
+            $('#attr button').click(function(){
+                console.log($('div').attr('id'));
+            });
+            $('#val button').click(function(){
+                console.log($('#val button').val());
+            });
+            $('#text button').click(function(){
+                $('.jQuery p').text("FSociety");
+            });
+            $('#data button').click(function(){
+                $('#val button').data();
+            });
+             /*selector.method*/
+        });
+    </script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<!--functions: .click, .hide, .show, .toggle, .slideDown, .slideUp, .slideToggle, .fadeIn, .fadeOut, .addClass, .before, .after, .append, .html, .attr, .val, .text, .data-->
+    <div class="jQuery" id = "click">
+        <h1>Click Function</h1>
+        <button>.click</button>
+        <p>Insert a paragraph</p>
+    </div>
+    <div class="jQuery" id = "hide">
+        <h1>Hide Function</h1>
+        <button>.hide</button>
+        <p>Insert a paragraph</p>
+    </div>
+    <div class="jQuery" id = "show">
+        <h1>Show Function</h1>
+        <button>.show</button>
+        <p>Insert a paragraph</p>
+    </div>
+    <div class="jQuery" id = "toggle">
+        <h1>Toggle</h1>
+        <button>.toggle</button>
+        <p>Insert a paragraph</p>
+    </div>
+    <div class="jQuery" id = 'slideDown'>
+        <h1>slide Down</h1>
+        <button>.slideDown</button>
+        <p>Insert a paragraph</p>
+    </div>
+    <div class="jQuery" id = 'slideUp'>
+        <h1>Slide Up</h1>
+        <button>.slideUp</button>
+        <p>Insert a paragraph</p>
+    </div>
+    <div class="jQuery" id = 'slideToggle'>
+        <h1>slideToggle</h1>
+        <button>.slideToggle</button>
+        <p>Insert a paragraph</p>
+    </div>
+    <div class="jQuery" id = 'fadeIn'>
+        <h1>fade In</h1>
+        <button>.fadeIn</button>
+        <p>Insert a paragraph</p>
+    </div>
+    <div class="jQuery" id = 'fadeOut'>
+        <h1>fade Out</h1>
+        <button>.fadeOut</button>
+        <p>Insert a paragraph</p>
+    </div>
+    <div class="jQuery" id = 'addClass'>
+        <h1>addClass</h1>
+        <button>.addClass</button>
+        <p>Insert a paragraph</p>
+    </div>
+    <div class="jQuery" id = 'before'>
+        <h1>Before</h1>
+        <button>.before</button>
+        <p>Insert a paragraph</p>
+    </div>
+    <div class="jQuery" id = 'after'>
+        <h1>After</h1>
+        <button>.after</button>
+        <p>Insert a paragraph</p>
+    </div>
+    <div class="jQuery" id ='append'>
+        <h1>Append</h1>
+        <button>.append</button>
+        <p>Insert a paragraph</p>
+    </div>
+    <div class="jQuery" id = 'html'>
+        <h1>HTML</h1>
+        <button>.html</button>
+        <p>Insert a paragraph</p>
+    </div>
+    <div class="jQuery" id = 'attr'>
+        <h1>attr</h1>
+        <button>.attr</button>
+        <p>Insert a paragraph</p>
+    </div>
+    </div>
+    <div class="jQuery" id = 'val'>
+        <h1>val</h1>
+        <button value = '5'>.val</button>
+        <p>Insert a paragraph</p>
+    </div>
+    <div class="jQuery" id = 'text'>
+        <h1>text</h1>
+        <button>.text</button>
+        <p>Insert a paragraph</p>
+    </div>
+    <div class="jQuery" id = 'data'>
+        <h1>data</h1>
+        <button>.data</button>
+        <p>Insert a paragraph</p>
+    </div>
+</body>
+
+</html>

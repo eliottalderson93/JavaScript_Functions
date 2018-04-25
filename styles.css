@@ -1,0 +1,36 @@
+/*This is a default CSS document*/
+*{
+    padding:0px;
+    margin:0px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+/*This is the start of the webpage*/
+.wrapper{
+    min-height:1000px;
+    min-width:1000px;
+    background-color:silver;
+}
+    .jQuery{
+        width:1000px;
+        height:300px;
+        border-bottom:3px black solid;
+        background-color:white;
+    }
+        .jQuery button{
+            display:inline;
+            background-color:skyblue;
+            width:200px;
+            height:75px;
+            border:silver solid 5px;
+        }
+        .jQuery h1{
+            display:block;
+        }
+        .jQuery p{
+            display:inline;
+        }
+    /*<!--functions: .click, .hide, .show, .toggle, .slideDown, .slideUp, .slideToggle, .fadeIn, .fadeOut, .addClass, .before, .after, .append, .html, .attr, .val, .text, .data-->*/
+    .red{
+       color:Red;
+    }
+    
